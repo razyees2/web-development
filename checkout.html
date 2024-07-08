@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ecommerce store for mobile">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>YourMob</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome 4 icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+    <div id="page" class="checkout">
+
+        <header id="mainheader">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between">
+                <div class="logo">
+                    <a class="site-logo" href="index.html">YourMob</a>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3 active">
+                        <a class="active nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="checkout.html">Checkout</a>
+                    </li>
+                </ul>
+                <!-- action="/action_page.php -->
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+
+            </nav>
+
+            <!--Jumbotron for Hero Section -->
+            <div class="jumbotron jumbotron-fluid card card-image align-items-center">
+                <div class="container hero-image my-auto">
+                    <h1 class="text-description">Samsung s10 with heavy discount!!!</h1>
+
+                    <button type="button" class="btn-success btn-lg"><a href="product_detail.html">
+                            View Product</a></button>
+                </div>
+            </div> <!-- hero section -->
+
+
+        </header>
+
+        <main id="main">
+
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Billing address</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Country</label>
+                            <select class="custom-select d-block w-100" id="country" required>
+                                <option value="">Choose...</option>
+                                <option>Australia</option>
+                                <option>New Zealand</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">State</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">Choose...</option>
+                                <option>Queensland</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+
+            </div>
+            
+            <button class="btn btn-success btn-lg btn-inline-block" type="submit">Continue to checkout</button>
+            </form>
+
+
+        </main>
+        <footer class="text-success bg-light overflow-hidden mt-5">
+            <div class="row p-4 justify-content-start">
+                <div class="col">
+                    <p>
+                        <h4>YourMob</h4><br>
+                        We are dedicated to provide you with the best possible servie for your shopping online. Our shop is
+                        located in the Queensland, Australia.
+                    </p>
+                </div>
+                <div class="col text-left">
+                    <span class="title pl-1">
+                        <h4>Link to Pages</h4>
+                    </span>
+                    <ul class="footer-nav p-3">
+    
+                        <li class="footer-nav-item">
+                            <a class="nav-link text-success p-0" href="index.html">Home</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="nav-link text-success p-0" href="about.html">About</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="nav-link text-success p-0" href="cart.html">Cart</a>
+                        </li>
+    
+                    </ul>
+    
+                </div>
+                <div class="col text-success justify-content-start">
+                    <span class="title pl-1">
+                        <h4>Contact Us</h4>
+                    </span>
+                    <ul class="contact p-3">
+                        <li class="contact-address">
+                            Brisbane, Queensland
+                        </li>
+                        <li class="contact-phone">
+                            Phone: 0450-000-111
+                        </li>
+                        <li class="contact-email">
+                            Email: yourmob@gmail.com
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+    
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

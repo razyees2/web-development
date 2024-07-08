@@ -1,0 +1,82 @@
+.logo a{
+    color: lightgreen;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+/* To insert hero image */
+.jumbotron{
+    background-image: url(../images/s10-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.home .jumbotron{
+    height: 400px;
+}
+
+.text-description {
+    text-shadow:5px 5px 10px green;
+  }
+
+#main{
+    padding: 0 50px;
+}
+
+.service-wrapper .servite-item{
+    padding: 20px 40px;
+}
+
+.servite-item .title{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+
+.product-image img{
+    width: 350px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.product-title .title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.product-full-image img{
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+}
+.product-detail table{
+    margin: 60px auto;
+}
+
+.product-detail .table.table-detail{
+    width: 70%;;
+}
+
+.container .col{
+    padding: 50px 0;
+}
+
+button a{
+    color: white;
+}
+
+.product-image,
+.product-title,
+.product-price,
+.product-add-to-cart{
+    padding-top: 10px;
+}
+
+.description ul{
+    padding: 20px;
+}
+
+/* Footer */
